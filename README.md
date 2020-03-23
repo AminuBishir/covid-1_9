@@ -7,3 +7,5 @@ To conribute:
 1. Fork your own copy of the repo
 2. Make your contributions
 3. Create a PR
+
+Demo page: https://aminubishir.github.io/covid-1_9/
