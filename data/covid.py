@@ -1,7 +1,7 @@
 '''
-    20200321
-    Gabriel Cesar
-    gabrielcesar2@gmail.com
+    20200323
+    Aminu Bishir
+    aminubihs@gmail.com
 '''
 
 import json
@@ -10,11 +10,11 @@ import sys
 from datetime import datetime
 
 help = '''\
-Uso:
-$ python3 codigo_do_estado suspeitos confirmados recuperados mortes
+Uaage:
+$ python3 state-code suspected confirmed recovered death
 
-Exemplo:
-$ python3 PA 8 4 2 0
+Exemple:
+$ python3 LA 8 4 2 0
 '''
 
 try: 
@@ -30,7 +30,7 @@ try:
     total_recovered = 0
     total_death = 0
 
-    with open("covid.json", "r") as covid_data:
+    with open("ng_states.json", "r") as covid_data:
         covid_current = json.load(covid_data)
 
     for state in covid_current:
