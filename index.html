@@ -16,16 +16,16 @@
             font-size: 14px;
         }
 
-        .container {
+        .container0 {
             border: 1px solid #a0a0a0;
             border-radius: 4px;
             padding: 16px;
             margin: 30px auto;
-            width: 800px;
         }
 
         #map-area {
-            width: 504px;
+            width: 55%;
+			height: auto;
             margin: 0 auto;
         }
     </style>
@@ -40,15 +40,39 @@
   
 </head>
 <body>
-   <div class="container">
+   
+<div class="container-fluid">
+<div class="row">
 
+	<div class="col-lg-12 col-md-12 col-sm-12">
+		<marquee id="breaking"></marquee>
+	</div>
+
+</div>
+   <div class="row">
+   <div class="col-md-9 col-lg-9  col-sm-12">
+   <div class="container0">
     <h1>Covid19 Cases Across the 36 States of Nigeria</h1>
-    <div id="map-area">
+   <div id="map-area">
         <div class="map">
             <span>Loading the Map info...!<br><br>Please Refresh if it's taking longer.</br></span>
         </div>
     </div>
-</div> 
+   </div>
+   </div>
+   
+   <div class="col-md-3 col-lg-3 col-sm-12">
+   <h3 class="text-center margin-t-0 mr-sm-5" style="color:#fff;background-color:#1976d2; padding-bottom:1rem;">Confirmed Cases</h3>
+			<ul class="list-group borderless" id="confirmed-list">
+							
+			</ul>	
+   </div>
+   
+   </div>
+   
+   
+    
+
 
 </body>
 

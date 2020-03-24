@@ -10,13 +10,23 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
     .then(response => response.json())
     .then(function(data)
     {
+		var total_confirmed =0;
         for (var state = 0; state < data.length; state ++){
 			states.push({'state': data[state]['state'], 'code': data[state]['code'], 'suspect': data[state]['suspect'], 'confirmed': data[state]['confirmed'], 'recovered': data[state]['recovered'], 'death': data[state]['death']})
 			console.log(states[state])
 			
+			 if(states[state]['confirmed']>0){
+				
+			document.getElementById('confirmed-list').innerHTML += '<li class="list-group-item" style="margin-bottom:10px"><font style="color:blue; font-family:\'aria-rounded\',aria,\'sans-serif\';font-size:18px;font-weight:bold">'+states[state]['state']+':</font><font style="color:red;margin-left:5px;font-size:18px">'+states[state]['confirmed']+'</font></li>'
+				
+			total_confirmed += parseInt(states[state]['confirmed'])
 				}
+		}
             
-        console.log(states[0]['code']+' state')
+        if(total_confirmed >0){
+			
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px">NCDC announced 4 new confirmed cases (3 in Lagos, 2 in FCT),  bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+		}
 	$("#map-area").mapael({
 			map: {
 				name: "nigeria",
