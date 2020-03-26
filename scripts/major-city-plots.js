@@ -34,18 +34,21 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					attrs: {
 						fill: "#f5faff",
 						stroke: "#ced8d0",
+						
 					}
 				},
 				defaultPlot: {
-					size: 8,
+					size: 18,
 				}
 			},
 			plots: {
 				'abia': {
 					latitude: 5.25,
 					longitude: 7.403,
-					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[0]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[0]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[0]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[0]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[0]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[0]['death'] + "</span>"}
-				},
+					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[0]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[0]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[0]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[0]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[0]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[0]['death'] + "</span>"},
+					
+					
+					},
 				'adamawa': {
 					latitude: 9.3,
 					longitude: 12.5,
@@ -227,6 +230,8 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[36]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[36]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[36]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[36]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[36]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[36]['death'] + "</span>"}
 				},
 			},
+			
+			
 			// links: {
 			//     'link1': {
 			//         factor: -0.3,
