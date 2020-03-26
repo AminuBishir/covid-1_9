@@ -9,8 +9,9 @@ No amount of effort is too small, you can contribute in whatever way possible yo
 4. #StayHome  & Stay safe
 
 To conribute:
-1. Fork your own copy of the repo
-2. Make your contributions
-3. Create a PR
+1. Go to issue page to see what you can contribute on. Or create an issue to let us of what you are going to work on
+2. Fork your own copy of the repo
+3. Make your contributions
+4. Create a PR
 
 Demo page: https://aminubishir.github.io/covid-1_9/
