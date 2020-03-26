@@ -25,7 +25,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px">NCDC confirmed 14 new cases (2 in FCT, 12 in Lagos), as at 8:35pm 26/03/2020, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px">NCDC confirmed 14 new cases (2 in FCT, 12 in Lagos and 1 in Bauchi), as at 8:35pm 26/03/2020, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
 		}
 	$("#map-area").mapael({
 			map: {
