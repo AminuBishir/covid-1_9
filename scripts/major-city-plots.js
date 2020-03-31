@@ -25,7 +25,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 20 new cases have been confirmed by NCDC as at 9:00pm  30/03/2020, 4 are in FCT, 13 in Lagos, 2 in Kaduna and 1 in Oyo, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 4 new cases have been confirmed by NCDC as at 11:15am  31/03/2020, 3 in Osun and 1 in Ogun, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
 		}
 	$("#map-area").mapael({
 			map: {
