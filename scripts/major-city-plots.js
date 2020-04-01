@@ -11,6 +11,8 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
     .then(function(data)
     {
 		var total_confirmed =0;
+		var total_recovered = 0;
+		var total_death = 0;
         for (var state = 0; state < data.length; state ++){
 			states.push({'state': data[state]['state'], 'code': data[state]['code'], 'suspect': data[state]['suspect'], 'confirmed': data[state]['confirmed'], 'recovered': data[state]['recovered'], 'death': data[state]['death']})
 			console.log(states[state])
@@ -20,13 +22,22 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 			document.getElementById('confirmed-list').innerHTML += '<li class="list-group-item" style="margin-bottom:10px"><font style="color:blue; font-family:\'aria-rounded\',aria,\'sans-serif\';font-size:18px;font-weight:bold">'+states[state]['state']+':</font><font style="color:red;margin-left:5px;font-size:18px">'+states[state]['confirmed']+'</font></li>'
 				
 			total_confirmed += parseInt(states[state]['confirmed'])
+			total_recovered += parseInt(states[state]['recovered'])
+			total_death += parseInt(states[state]['death'])
 				}
 		}
             
         if(total_confirmed >0){
-			
+			//display breaking news
 			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 4 new cases have been confirmed by NCDC as at 8:00pm  31/03/2020, 3 in FCT and 1 in Lagos, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
-		}
+			
+			//display summary of cases
+			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Confirmed Cases: <font style="color:blue;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></li>'
+			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Active Cases: <font style="color:orange;font-weight:bold;margin-left:5px;font-size:20px">'+(total_confirmed - total_recovered - total_death)+' ('+parseFloat(((total_confirmed - total_recovered - total_death)/total_confirmed)*100).toFixed(2)+'%)</font></li>'
+			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Recovered: <font style="color:green;font-weight:bold;margin-left:5px;font-size:20px">'+total_recovered+' ('+parseFloat((total_recovered/total_confirmed)*100).toFixed(2)+'%)</font></li>'
+			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Death: <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_death+' ('+parseFloat((total_death/total_confirmed)*100).toFixed(2)+'%)</font></li>'
+			
+	}
 	$("#map-area").mapael({
 			map: {
 				name: "nigeria",

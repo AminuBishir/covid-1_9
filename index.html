@@ -28,6 +28,10 @@
 			height: auto;
             margin: 0 auto;
         }
+		
+		.borderless li {
+			border-top: none;
+		}
     </style>
 	<link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -51,14 +55,23 @@
 </div>
    <div class="row">
    <div class="col-md-9 col-lg-9  col-sm-12">
-   <div class="container0">
-    <h3>Covid19 Cases Across the 36 States of Nigeria</h3>
-	<h5>Touch any point to see the state's stats</h5>
-   <div id="map-area">
-        <div class="map">
-            <span>Loading the Map info...!<br><br>Please Refresh if it's taking longer.</br></span>
-        </div>
-    </div>
+   <div class="row">
+   <div class="col">
+	   <div class="container0">
+		<h3>Covid19 Cases Across the 36 States of Nigeria</h3>
+		<h5>Touch any point to see the state's stats</h5>
+	   <div id="map-area">
+			<div class="map">
+				<span>Loading the Map info...!<br><br>Please Refresh if it's taking longer.</br></span>
+			</div>
+		</div>
+	   </div>
+   </div>
+   </div>
+   <div class="row">
+		<ul class="list-group borderless" id="summary">
+		
+		</ul>
    </div>
    </div>
    
