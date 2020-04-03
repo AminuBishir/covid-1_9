@@ -29,7 +29,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 6 new cases have been confirmed by NCDC as at 11:00am  3/04/2020, in Osun, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 20 new cases have been confirmed by NCDC as at 10:00pm  3/04/2020,11 in Lagos, 3 in FCT, 3 in Edo, 2 in Osun and 1 in Ond, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'. Also 2 deaths were recorded in lagos and Edo</font></font>'
 			
 			//display summary of cases
 			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Confirmed Cases: <font style="color:blue;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></li>'
