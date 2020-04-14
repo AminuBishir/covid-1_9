@@ -22,7 +22,7 @@
  {"state": "Kebbi", "code": "KE", "suspect": "0", "confirmed": "0", "recovered": "0", "death": "0"}, 
  {"state": "Kogi", "code": "KO", "suspect": "0", "confirmed": "0", "recovered": "0", "death": "0"}, 
  {"state": "Kwara", "code": "KW", "suspect": "0", "confirmed": "4", "recovered": "0", "death": "0"}, 
- {"state": "Lagos", "code": "LA", "suspect": "0", "confirmed": "189", "recovered": "66", "death": "7"}, 
+ {"state": "Lagos", "code": "LA", "suspect": "0", "confirmed": "189", "recovered": "61", "death": "7"}, 
  {"state": "Nasarawa", "code": "NA", "suspect": "0", "confirmed": "0", "recovered": "0", "death": "0"}, 
  {"state": "Niger", "code": "NI", "suspect": "0", "confirmed": "1", "recovered": "0", "death": "0"}, 
  {"state": "Ogun", "code": "OG", "suspect": "0", "confirmed": "9", "recovered": "0", "death": "0"},
