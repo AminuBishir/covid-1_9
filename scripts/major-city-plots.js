@@ -29,7 +29,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 117 new cases have been confirmed by NCDC on  21/04/2020,54 in Lagos, 29 in FCT, 14 in Kano, 8 in Ogun, 6 in Borno, 4 in Katsina 1 each in Bauchi and Rivers, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 97 new cases have been confirmed by NCDC on  22/04/2020,74 in Lagos, 5 in Katsina, 4 in Ogun, 2 in Delta, 2 in Edo, 1 each in Kwara, Oyo, FCT and Adamawa, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
 			
 			//display summary of cases
 			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Confirmed Cases: <font style="color:blue;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></li>'
@@ -60,11 +60,11 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					
 					
 					},
-				/*'adamawa': {
+				'adamawa': {
 					latitude: 9.3,
 					longitude: 12.5,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[1]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[1]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[1]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[1]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[1]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[1]['death'] + "</span>"}
-				},*/
+				},
 				'akwa-ibom': {
 					latitude: 5,
 					longitude: 7.833,
