@@ -29,7 +29,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 97 new cases have been confirmed by NCDC on  22/04/2020,74 in Lagos, 5 in Katsina, 4 in Ogun, 2 in Delta, 2 in Edo, 1 each in Kwara, Oyo, FCT and Adamawa, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 10 new cases have been confirmed by NCDC on  23/04/2020,78 in Lagos, 14 in FCT, 5 in Ogun, 4 in Gombe, 3 in Borno, 2 in Akwa Ibom, 2 in Edo, 1 each in Kwara and Plateau, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
 			
 			//display summary of cases
 			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Confirmed Cases: <font style="color:blue;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></li>'
@@ -210,11 +210,11 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					longitude: 4,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[30]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[30]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[30]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[30]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[30]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[30]['death'] + "</span>"}
 				},
-				/*'plateau': {
+				'plateau': {
 					latitude: 9.167,
 					longitude: 9.75,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[31]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[31]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[31]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[31]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[31]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[31]['death'] + "</span>"}
-				},*/
+				},
 				'rivers': {
 					latitude: 4.75,
 					longitude: 6.83,
