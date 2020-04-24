@@ -29,7 +29,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 10 new cases have been confirmed by NCDC on  23/04/2020,78 in Lagos, 14 in FCT, 5 in Ogun, 4 in Gombe, 3 in Borno, 2 in Akwa Ibom, 2 in Edo, 1 each in Kwara and Plateau, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 108 new cases have been confirmed by NCDC on  23/04/2020,78 in Lagos, 14 in FCT, 5 in Ogun, 4 in Gombe, 3 in Borno, 2 in Akwa Ibom, 2 in Edo, 1 each in Kwara and Plateau, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
 			
 			//display summary of cases
 			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Confirmed Cases: <font style="color:blue;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></li>'
