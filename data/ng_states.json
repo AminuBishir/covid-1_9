@@ -9,7 +9,7 @@
  {"state": "Cross River", "code": "CR", "suspect": "0", "confirmed": "0", "recovered": "0", "death": "0"}, 
  {"state": "Delta", "code": "DE", "suspect": "0", "confirmed": "6", "recovered": "0", "death": "1"}, 
  {"state": "Ebony", "code": "EB", "suspect": "0", "confirmed": "0", "recovered": "0", "death": "0"}, 
- {"state": "Edo", "code": "ED", "suspect": "0", "confirmed": "18", "recovered": "6", "death": "1"}, 
+ {"state": "Edo", "code": "ED", "suspect": "0", "confirmed": "19", "recovered": "6", "death": "1"}, 
  {"state": "Ekiti", "code": "EK", "suspect": "1", "confirmed": "4", "recovered": "2", "death": "0"}, 
  {"state": "Enugu", "code": "EN", "suspect": "0", "confirmed": "2", "recovered": "2", "death": "0"},
  {"state": "Abuja", "code": "FC", "suspect": "0", "confirmed": "138", "recovered": "23", "death": "2"}, 
