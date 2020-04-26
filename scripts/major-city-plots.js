@@ -29,7 +29,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 114 new cases have been confirmed by NCDC on  24/04/2020,75 in Lagos, 21 in Gombe, 6 in Ogun, 5 in FCT, 2 each in Zamfara and Edo, 1 each in Oyo, Kaduna and Sokoto, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 87 new cases have been confirmed by NCDC on  25/04/2020,32 in Lagos, 18 in Borno, 12 in Osun, 9 in Katsina, 4 each in Kano, and Ekiti, 3 each in Bauchi and Edo and 1 in Imo, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
 			
 			//display summary of cases
 			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Confirmed Cases: <font style="color:blue;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></li>'
@@ -135,11 +135,11 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					longitude: 11.167,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[15]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[15]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[15]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[15]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[15]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[15]['death'] + "</span>"}
 				},
-				/*'imo': {
+				'imo': {
 					latitude: 5.483,
 					longitude: 7.033,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[16]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[16]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[16]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[16]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[16]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[16]['death'] + "</span>"}
-				},*/
+				},
 				'jigawa': {
 					latitude: 12,
 					longitude: 9.75,
