@@ -29,7 +29,8 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">Covid19 Alert: </font><font style="margin-left:5px;font-size:18px"> 87 new cases have been confirmed by NCDC on  25/04/2020,32 in Lagos, 18 in Borno, 12 in Osun, 9 in Katsina, 4 each in Kano, and Ekiti, 3 each in Bauchi and Edo and 1 in Imo, bringing the total confirmed cases to <font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">New Cases Alert: </font><font style="margin-left:5px;font-size:18px"> 91 new confirmed, 17 recoveries, and 4 deaths </font>'
+			//<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font>
 			
 			//display summary of cases
 			document.getElementById('summary').innerHTML += '<li class="list-group-item"> <font style="font-weight:bold;margin-left:5px;font-size:20px">Confirmed Cases: <font style="color:blue;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font></li>'
@@ -80,11 +81,11 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					longitude: 10,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[4]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[4]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[4]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[4]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[4]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[4]['death'] + "</span>"}
 				},
-				/*'bayelsa': {
+				'bayelsa': {
 					latitude: 4.7,
 					longitude: 5.9,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[5]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[5]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[5]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[5]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[5]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[5]['death'] + "</span>"}
-				},*/
+				},
 				'benue': {
 					latitude: 7.333,
 					longitude: 8.75,
@@ -105,11 +106,11 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					longitude: 6,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[9]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[9]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[9]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[9]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[9]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[9]['death'] + "</span>"}
 				},
-				/*'ebonyi': {
+				'ebonyi': {
 					latitude: 6.25,
 					longitude: 8.083,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[10]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[10]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[10]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[10]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[10]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[10]['death'] + "</span>"}
-				},*/
+				},
 				'edo': {
 					latitude: 6.5,
 					longitude: 6,
@@ -160,12 +161,12 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					longitude: 7.5,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[20]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[20]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[20]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[20]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[20]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[20]['death'] + "</span>"}
 				},
-				/*'kebbi': {
+				'kebbi': {
 					latitude: 11.5,
 					longitude: 4,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[21]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[21]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[21]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[21]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[21]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[21]['death'] + "</span>"}
 				},
-				'kogi': {
+				/*'kogi': {
 					latitude: 7.5,
 					longitude: 6.7,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[22]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[22]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[22]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[22]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[22]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[22]['death'] + "</span>"}
@@ -225,12 +226,12 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					longitude: 5.25,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[33]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[33]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[33]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[33]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[33]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[33]['death'] + "</span>"}
 				},
-				/*'taraba': {
+				'taraba': {
 					latitude: 8,
 					longitude: 10.5,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[34]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[34]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[34]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[34]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[34]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[34]['death'] + "</span>"}
 				},
-				'yobe': {
+				/*'yobe': {
 					latitude: 12.0,
 					longitude: 11.5,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[35]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[35]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[35]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[35]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[35]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[35]['death'] + "</span>"}
