@@ -29,7 +29,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">New Cases Alert: </font><font style="margin-left:5px;font-size:18px"> 64 new confirmed cases, 15 recoveries, and 0 deaths (27/04/2020) </font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">New Cases Alert: </font><font style="margin-left:5px;font-size:18px"> 195 new confirmed cases, 0 recoveries, and 4 deaths (28/04/2020) </font>'
 			//<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font>
 			
 			//display summary of cases
@@ -181,11 +181,11 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
 					longitude: 3.75,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[24]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[24]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[24]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[24]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[24]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[24]['death'] + "</span>"}
 				},
-				/*'nasarawa': {
+				'nasarawa': {
 					latitude: 8.533,
 					longitude: 8.3,
 					tooltip: {content:'<div class=\'arwen_icon_tooltip arwen_flag_' + states[25]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states[25]['state'] + " State</span><br>Suspected Cases <span class='arwen_color_orange'>" + states[25]['suspect'] + "</span><br>Confirmed Cases <span class='arwen_color_orange'>" + states[25]['confirmed'] + "</span><br>Recovered <span class='arwen_color_orange'>" + states[25]['recovered'] + "</span><br>Death <span class='arwen_color_red'>" + states[25]['death'] + "</span>"}
-				},*/
+				},
 				'niger': {
 					latitude: 10,
 					longitude: 6,
