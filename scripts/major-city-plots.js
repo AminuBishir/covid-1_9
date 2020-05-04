@@ -29,7 +29,7 @@ fetch("https://raw.githubusercontent.com/AminuBishir/covid-1_9/master/data/ng_st
             
         if(total_confirmed >0){
 			//display breaking news
-			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">New Cases Alert: </font><font style="margin-left:5px;font-size:18px"> 220 new confirmed cases, 34 recoveries, and 17 deaths (30/04/2020) </font>'
+			document.getElementById('breaking').innerHTML += '<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">New Cases Alert: </font><font style="margin-left:5px;font-size:18px"> 170 new confirmed cases, 15 recoveries, and 2 deaths (03/05/2020) </font>'
 			//<font style="color:red;font-weight:bold;margin-left:5px;font-size:20px">'+total_confirmed+'</font>
 			
 			//display summary of cases
